@@ -153,17 +153,38 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
 h2 {
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
 h3 {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 a {
   font-size: 1.5rem;
   text-decoration: none;
   color: black;
   margin: 1%;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 2.5rem;
+    padding: 2%;
+  }
 }
 /*header style section*/
 .navigation {
@@ -197,6 +218,17 @@ a {
   border-radius: 30%;
   margin: 1%;
 }
+@media (max-width: 500px) {
+  .lower-header-content img {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .lower-header-content {
+    text-align: center;
+  }
+}
 #title {
   display: flex;
   flex-direction: column;
@@ -229,6 +261,20 @@ a {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .middle-content #about {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .middle-content #about h2 {
+    text-align: center;
+  }
+  .middle-content #about p {
+    width: 100%;
+    padding: 5%;
+    font-size: 1.75rem;
+  }
+}
 .middle-content #skills {
   height: 100%;
   display: flex;
@@ -245,6 +291,34 @@ a {
   font-size: 1.5rem;
   padding: 3%;
   border: 1px solid grey;
+}
+@media (max-width: 500px) {
+  .middle-content #skills {
+    background-color: #A1C8C4;
+    width: 100%;
+    align-items: center;
+  }
+  .middle-content #skills h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .middle-content #skills ul {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .middle-content #skills li {
+    font-size: 1.75rem;
+    font-weight: bold;
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 /*work history section styles*/
 .work {
@@ -270,6 +344,20 @@ a {
 .work table tr:nth-child(even) {
   background-color: #c1dbd8;
 }
+@media (max-width: 500px) {
+  .work table {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .work {
+    margin-bottom: 15%;
+  }
+  .work h2 {
+    margin: 2%;
+  }
+}
 /*contact section styles*/
 #contact {
   display: flex;
@@ -277,10 +365,31 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+  text-align: center;
+}
+#contact a:hover {
+  color: #986E49;
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  #contact a {
+    font-size: 1.5rem;
+  }
 }
 #contact p {
   margin: 3%;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  #contact p {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  #contact {
+    margin-bottom: 5%;
+  }
 }
 /*footer section styles*/
 footer {

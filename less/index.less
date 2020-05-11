@@ -98,14 +98,23 @@ h1, h2, h3{
 h1{
 	font-size: 4rem;
 	font-weight: bold;
+	@media(max-width: 500px){
+		font-size: 4.5rem;
+	}
 }
 
 h2{
 	font-size: 3rem;
+	@media(max-width: 500px){
+		font-size: 3.5rem;	
+	}
 }
 
 h3{
 	font-size: 2rem;
+	@media(max-width: 500px){
+		font-size:2.5rem;
+	}
 }
 
 a{
@@ -113,6 +122,10 @@ a{
 	text-decoration: none;
 	color: black;
 	margin: 1%;
+	@media(max-width: 500px){
+		font-size: 2.5rem;
+		padding: 2%;
+	}
 }
 
 /*header style section*/
@@ -136,6 +149,8 @@ a{
 		} //closes hover
 	}//closes a 	
 
+	
+
 } //closes .title
 
 .lower-header-content{
@@ -148,7 +163,16 @@ a{
 		height: 20%;
 		border-radius: 30%;
 		margin: 1%;
+
+		@media(max-width: 500px){
+			width: 40%;
+			height: 40%;
+		}
 	} // closes img
+
+	@media(max-width: 500px){
+		text-align: center;
+	}
 	
 }// closes .lower-header-content
 
@@ -182,6 +206,21 @@ a{
 			margin: 1%;
 			padding: 1%;
 		}//closes p
+
+		@media(max-width: 500px){
+			margin-bottom: 5%;
+			width: 100%;
+
+			h2{
+				text-align: center;
+			}//closes h2
+
+			p{
+				width: 100%;
+				padding: 5%;
+				font-size: 1.75rem;
+			}//closes p
+		}//closes media 500px
 	}//closes .about
 
 	#skills{
@@ -199,7 +238,36 @@ a{
 			padding: 3%;
 			border: @border;
 		}//closes li
+
+		@media(max-width: 500px){
+			background-color: @header-color;
+			width: 100%;
+			align-items: center;
+
+			h2{
+				width: 100%;
+				text-align: center;
+				margin-bottom: 5%;
+			}//closes h2
+
+			ul{
+				text-align: center;
+				margin-bottom: 5%;
+			}//closes ul
+
+			li{
+				font-size: 1.75rem;
+				font-weight: bold;
+				border: none;
+			}//closes li
+		}//closes media 500px
 	}//closes .skills
+
+	@media(max-width: 500px){
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}//closes media 500px
 
 }//closes .middle-content
 
@@ -227,17 +295,50 @@ a{
 			background-color: lighten(@tr-color, 10%);
 		}//closes tr
 
+		@media(max-width: 500px){
+			width: 100%;
+			font-size: 1.75rem;
+		}//closes media 500px
 	}//closes table
+
+	@media(max-width: 500px){
+		margin-bottom: 15%;
+		
+		h2{
+			margin: 2%;
+		}
+	}//closes media 
 } //closes .work
 
 /*contact section styles*/
 #contact{
 	.center-col();
 	margin-top: 5%;
+	text-align: center;
+
+	a{
+		&:hover{
+			color:@link-hover-color;
+			font-weight: bold;
+			font-size: 2rem;
+		} //closes hover
+
+		@media(max-width: 500px){
+			font-size: 1.5rem;
+		}
+	}
 
 	p{
 		margin: 3%;
 		font-size: 1.5rem;
+
+		@media(max-width: 500px){
+			font-size: 1.75rem;
+		}//closes media 500px
+	}
+
+	@media(max-width: 500px){
+		margin-bottom: 5%;
 	}
 }//closes contact
 
