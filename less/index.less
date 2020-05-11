@@ -50,10 +50,19 @@ table {
 
 /*LESS variables*/
 @font-cursive: 'Lobster', cursive;
+@font-normal: 'Lora', serif;
+@border: 1px solid grey;
 
 /*LESS mix-ins*/
 .center(){
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-col(){
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -70,6 +79,7 @@ html, body {
 	font-size: 62.5%;
 	padding: 0;
 	margin: 0;
+	font-family: @font-normal;
 }
 
 h1, h2, h3{
@@ -123,12 +133,53 @@ a{
 }// closes .lower-header-content
 
 .title{
-	.center();
-	flex-direction: column;
+	.center-col();
 
 	h1{
 		margin: 1%;
 	} //closes h1
-}
+}//closes .title
 
 /*middle content styles*/
+.middle-content{
+	.center();
+	justify-content: space-evenly;
+	align-items: flex-start;
+
+	.about{
+		display: flex;
+		flex-direction: column;
+		width: 45%;
+		
+		h2{
+			padding: 2%;
+		}//closes h2
+
+		p{
+			width: 80%;
+			font-size: 1.5rem;
+			margin: 1%;
+			padding: 1%;
+		}//closes p
+	}//closes .about
+
+	.skills{
+		height: 100%;
+		.center-col();
+		align-items: flex-start;
+
+		h2{
+			 margin-bottom: 15%;
+		}//closes h2
+
+		li{
+			width: 100%;
+			font-size: 1.5rem;
+			padding: 3%;
+			border: @border;
+		}//closes li
+	}//closes .skills
+
+}//closes .middle-content
+
+/*work history section styles*/
