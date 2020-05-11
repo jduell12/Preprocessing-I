@@ -233,3 +233,26 @@ a {
   border: 1px solid grey;
 }
 /*work history section styles*/
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.work table {
+  font-size: 1.5rem;
+  width: 80%;
+}
+.work table th {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2%;
+}
+.work table td {
+  text-align: center;
+  padding: 2%;
+}
+.work table tr:nth-child(even) {
+  background-color: grey;
+}

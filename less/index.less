@@ -52,6 +52,7 @@ table {
 @font-cursive: 'Lobster', cursive;
 @font-normal: 'Lora', serif;
 @border: 1px solid grey;
+@tr-color: grey;
 
 /*LESS mix-ins*/
 .center(){
@@ -183,3 +184,28 @@ a{
 }//closes .middle-content
 
 /*work history section styles*/
+.work{
+	.center-col();
+	margin-top: 10%;
+
+	table{
+		font-size: 1.5rem;
+		width: 80%;
+
+		th{
+			font-size: 2rem;
+			font-weight: bold;
+			padding: 2%;
+		}//closes th
+
+		td{
+			text-align: center;
+			padding: 2%;
+		}//closes td
+
+		tr:nth-child(even){
+			background-color: @tr-color;
+		}//closes tr
+
+	}//closes table
+} //closes .work
