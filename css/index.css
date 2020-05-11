@@ -126,11 +126,70 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*LESS variables*/
+/*LESS mix-ins*/
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
+/*general styles*/
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
 }
+h1,
+h2,
+h3 {
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin: 1%;
+}
+/*header style section*/
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation nav {
+  width: 20%;
+  margin: 2%;
+}
+.lower-header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lower-header-content img {
+  width: 20%;
+  height: 20%;
+  border-radius: 30%;
+  margin: 1%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title h1 {
+  margin: 1%;
+}
+/*middle content styles*/
