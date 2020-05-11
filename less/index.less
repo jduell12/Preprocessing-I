@@ -52,7 +52,12 @@ table {
 @font-cursive: 'Lobster', cursive;
 @font-normal: 'Lora', serif;
 @border: 1px solid grey;
-@tr-color: grey;
+@tr-color: #A1C8C4;
+@body-color: #FCF9EC;
+@header-color: #A1C8C4;
+@header-text-color: #986E49;
+@link-hover-color: #986E49;
+@link-hover-text: #C1FCF6;
 
 /*LESS mix-ins*/
 .center(){
@@ -81,11 +86,13 @@ html, body {
 	padding: 0;
 	margin: 0;
 	font-family: @font-normal;
+	background-color: @body-color;
 }
 
 h1, h2, h3{
 	font-family: @font-cursive;
 	font-weight: bold;
+	color: @header-text-color
 }
 
 h1{
@@ -113,16 +120,28 @@ a{
 	.center();
 
 	nav{
-		width: 20%;
+		width: 100%;
 		margin: 2%;
+		text-align: center;
 	}//closes nav
 
-	
+	a{
+		&:hover{
+			background-color: @link-hover-color;
+			color: @link-hover-text;
+			margin:1%;
+			padding:1%;
+			font-size: 2rem;
+			font-weight: bold;
+		} //closes hover
+	}//closes a 	
 
 } //closes .title
 
 .lower-header-content{
 	.center();
+	background-color: lighten(@header-color, 10%);
+	justify-content: space-evenly;
 
 	img{
 		width: 20%;
@@ -133,7 +152,7 @@ a{
 	
 }// closes .lower-header-content
 
-.title{
+#title{
 	.center-col();
 
 	h1{
@@ -146,8 +165,9 @@ a{
 	.center();
 	justify-content: space-evenly;
 	align-items: flex-start;
+	margin-top: 10%;
 
-	.about{
+	#about{
 		display: flex;
 		flex-direction: column;
 		width: 45%;
@@ -164,7 +184,7 @@ a{
 		}//closes p
 	}//closes .about
 
-	.skills{
+	#skills{
 		height: 100%;
 		.center-col();
 		align-items: flex-start;
@@ -204,8 +224,25 @@ a{
 		}//closes td
 
 		tr:nth-child(even){
-			background-color: @tr-color;
+			background-color: lighten(@tr-color, 10%);
 		}//closes tr
 
 	}//closes table
 } //closes .work
+
+/*contact section styles*/
+#contact{
+	.center-col();
+	margin-top: 5%;
+
+	p{
+		margin: 3%;
+		font-size: 1.5rem;
+	}
+}//closes contact
+
+/*footer section styles*/
+footer{
+	background-color: @header-color;
+	
+}//closes footer

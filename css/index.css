@@ -140,12 +140,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Lora', serif;
+  background-color: #FCF9EC;
 }
 h1,
 h2,
 h3 {
   font-family: 'Lobster', cursive;
   font-weight: bold;
+  color: #986E49;
 }
 h1 {
   font-size: 4rem;
@@ -170,13 +172,24 @@ a {
   align-items: center;
 }
 .navigation nav {
-  width: 20%;
+  width: 100%;
   margin: 2%;
+  text-align: center;
+}
+.navigation a:hover {
+  background-color: #986E49;
+  color: #C1FCF6;
+  margin: 1%;
+  padding: 1%;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .lower-header-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #c1dbd8;
+  justify-content: space-evenly;
 }
 .lower-header-content img {
   width: 20%;
@@ -184,13 +197,13 @@ a {
   border-radius: 30%;
   margin: 1%;
 }
-.title {
+#title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.title h1 {
+#title h1 {
   margin: 1%;
 }
 /*middle content styles*/
@@ -200,22 +213,23 @@ a {
   align-items: center;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin-top: 10%;
 }
-.middle-content .about {
+.middle-content #about {
   display: flex;
   flex-direction: column;
   width: 45%;
 }
-.middle-content .about h2 {
+.middle-content #about h2 {
   padding: 2%;
 }
-.middle-content .about p {
+.middle-content #about p {
   width: 80%;
   font-size: 1.5rem;
   margin: 1%;
   padding: 1%;
 }
-.middle-content .skills {
+.middle-content #skills {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -223,10 +237,10 @@ a {
   align-items: center;
   align-items: flex-start;
 }
-.middle-content .skills h2 {
+.middle-content #skills h2 {
   margin-bottom: 15%;
 }
-.middle-content .skills li {
+.middle-content #skills li {
   width: 100%;
   font-size: 1.5rem;
   padding: 3%;
@@ -254,5 +268,21 @@ a {
   padding: 2%;
 }
 .work table tr:nth-child(even) {
-  background-color: grey;
+  background-color: #c1dbd8;
+}
+/*contact section styles*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+#contact p {
+  margin: 3%;
+  font-size: 1.5rem;
+}
+/*footer section styles*/
+footer {
+  background-color: #A1C8C4;
 }
