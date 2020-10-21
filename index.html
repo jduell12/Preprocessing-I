@@ -4,16 +4,92 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Jessica Duell's Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-</head>
-
+  </head>
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <section class="navigation">
+      <nav>
+        <a href="#title">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
+    <section class=lower-header-content>
+      <img src="./img/profile.jpg" alt="profile pic">
+      <div id="title">
+        <h1>Jessica Duell</h1>
+        <h2>Full Stack Web Developer</h2>
+      </div>
+    </section>
+  </header>
+  <section class="middle-content">
+    <section id="about">
+      <h2>Why You Shuold Hire Me...</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li> Mac OS</li>
+        <li>Window OS</li>
+        <li>Using the command line</li>
+      </ul>
+    </section>
+  </section>
+  <section class="work">
+    <h2>Work History</h2>
+    <table>
+      <tr>
+        <th>Years</th>
+        <th>Company</th>
+        <th>Job Title</th>
+        <th>Technology Used</th>
+      </tr>
+      <tr class="row">
+        <td class="col1">3</td>
+        <td class="col2">Apple</td>
+        <td class="col3">Software Developer</td>
+        <td class="col4">Angular</td>
+      </tr>
+      <tr class="row">
+        <td class="col1">2</td>
+        <td class="col2">Google</td>
+        <td class="col3">Software Developer</td>
+        <td class="col4">Express.js</td>
+      </tr>
+      <tr class="row">
+        <td class="col1">1</td>
+        <td class="col2">Amazon</td>
+        <td class="col3">Software Developer</td>
+        <td class="col4">C++</td>
+      </tr>
+    </table>
+  </section>
+  <section id="contact">
+    <h2>If you would like to get in touch:</h2>
+    <p>Email: <a href="mailto:duellsoftwaredev@gmail.com">duellsoftwaredev@gmail.com</a></p>
+  </section>
+  <footer class="navigation">
+    <nav>
+      <a href="#title">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
 </body>
 </html>
